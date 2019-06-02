@@ -1,0 +1,107 @@
+<html>
+<head>
+<style>
+	table, th, td {
+		border: 5px white;
+		border-collapse: collapse;
+		}
+	th, td {
+		padding: 15px;
+		background-color:#CCCC00;
+	
+}
+	tr,td,input{
+					width:250px;
+					height:50px;
+				}
+	.f1{
+		border-radius:30%;	
+	}
+	.f2{
+		border-radius:30%;	
+	}
+	.f3{
+		border-radius:30%;	
+	}
+	.f4{
+		border-radius:30%;	
+	}
+</style>
+</head>
+<body background="images\back.png"><center>
+<H1><B>CONSUMPTION CALCULATOR</B></H1>
+
+<table border=1  >
+<tr><th>MACHINE TYPE</th><th>TOTAL POWER CONSUMED</th><th> QUANTITY OF EQUIPMENT</th><th>TIME</th><th>TOTAL COST</th></tr>
+
+<tr><td><input type="text"  name="" value="" placeholder="enter the type of machine"></td><td><input type="text" id="a" name="" value="" placeholder="enter the power in watts"></td><td><input type="text" id="f" name="" value="" placeholder="enter the quantity in numbers"></td><td><input type="text" id="k" name="" value="" placeholder="enter the time in hours"></td><td><label id="P"><input type="text" name="" value="" placeholder="total cost will show here" readonly></label></td></tr>
+
+<tr><td><input type="text" name="" value="" placeholder="enter the type of machine"></td><td><input type="text" id="b" name="" value="" placeholder="enter the power in watts"></td><td><input type="text" id="g" name="" value="" placeholder="enter the quantity in numbers"></td><td><input type="text" id="l" name="" value="" placeholder="enter the time in hours"></td><td><label id="Q"><input type="text" name="" value="" placeholder="total cost will show here" readonly></label></td></tr>
+
+<tr><td><input type="text" name="" value="" placeholder="enter the type of machine"></td><td><input type="text" id="c" name="" value="" placeholder="enter the power in watts"></td><td><input type="text" id="h" name="" value="" placeholder="enter the quantity in numbers"></td><td><input type="text" id="m" name="" value="" placeholder="enter the time in hours"></td><td><label id="R"><input type="text"  name="" value="" placeholder="total cost will show here" readonly></label></td></tr>
+
+<tr><td><input type="text" name="" value="" placeholder="enter the type of machine"></td><td><input type="text" id="d" name="" value="" placeholder="enter the power in watts"></td><td><input type="text" id="i" name="" value="" placeholder="enter the quantity in numbers"></td><td><input type="text" id="n" name="" value="" placeholder="enter the time in hours"></td><td><label id="S"><input type="text" name="" value="" placeholder="total cost will show here" readonly></label></td></tr>
+
+<tr><td><input type="text" name="" value="" placeholder="enter the type of machine"></td><td><input type="text" id="e" name="" value="" placeholder="enter the power in watts"></td><td><input type="text" id="j" name="" value="" placeholder="enter the quantity in numbers"></td><td><input type="text" id="o" name="" value="" placeholder="enter the time in hours"></td><td><label id="T"><input type="text"  name="" value="" placeholder="total cost will show here" readonly></label></td></tr>
+
+</table><br>
+<center> <input type="button" value="Weekly" onClick="Weekly();" style="width:90px;" class="f1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="Calculate" onClick="Calculate();" style="width:90px;" class="f2"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="Monthly" onClick="Monthly();" style="width:90px;" class="f3"> 
+</center><br><center><a href="file:///D:/my%20project/saurabh/power/table.html"><input type="button" value="Clear" onClick="Clear();" style="width:90px;" class="f4 "></a></center>
+<h4><label id="ABC"></label></h4>
+<h4><label id="DEF"></label></h4>
+
+<script type = "text/javascript">
+	   function Calculate()
+	   {
+	   var a = document.getElementById('a').value;
+	   var f = document.getElementById('f').value;
+	   var k = document.getElementById('k').value;
+	   var p=document.getElementById("P");
+	   p=6*((a*f*k)/1000);
+	   P.innerHTML = p;
+
+	   var b = document.getElementById('b').value;
+	   var g = document.getElementById('g').value;
+	   var l = document.getElementById('l').value;
+	   var q=document.getElementById("Q");
+	   q=6*((b*g*l)/1000);
+	   Q.innerHTML = q;
+	   
+	   var c = document.getElementById('c').value;
+	   var h = document.getElementById('h').value;
+	   var m = document.getElementById('m').value;
+	   var R=document.getElementById("R");
+	   r=6*((c*h*m)/1000);
+	   R.innerHTML = r;
+	   
+	   var d = document.getElementById('d').value;
+	   var i = document.getElementById('i').value;
+	   var n = document.getElementById('n').value;
+	   var S=document.getElementById("S");
+	   s=6*((d*i*n)/1000);
+	   S.innerHTML = s;
+	   
+	   var e = document.getElementById('e').value;
+	   var j = document.getElementById('j').value;
+	   var o = document.getElementById('o').value;
+	   var T=document.getElementById("T");
+	   t=6*((e*j*o)/1000);
+	   T.innerHTML = t;
+	   var  z=p+q+r+s+t;
+	return z;
+	   }
+	function Weekly()
+	{
+ var c= Calculate()*7;
+ window.confirm("weekly consumption"+(ABC.innerHTML=c));
+   }
+   function Monthly()
+	{
+ var c= Calculate()*30;
+ window.confirm( "Monthly consumption"+(ABC.innerHTML=c));
+   }
+	
+</script>		
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			form{
+					width:500px;
+					margin:auto;
+					padding:20px;
+					background:opaque;
+					font-size:20px;
+					font-family:verdana;
+					color:#00000;
+					text-align:center
+				}
+			body{
+					 background: url(images/tower.png);
+					 background-repeat: no-repeat;
+					 background-size:cover;
+					 
+				
+				}	
+			fieldset{
+			        border-width: 10px;
+					}
+		img{
+					border-radius:50%;
+					
+		}
+		</style>
+		
+	</head>
+<body >
+<form method="post" action="insert.php" >
+  <fieldset >
+	 <legend ><img src="images\avatar.jpg" height=200px width=200px></legend>
+    First name:<input type="text" name="fname" value="" placeholder="enter your first name" required>
+    <br><br>
+	
+    Last name:<input type="text" name="lname"  value="" placeholder="enter your lastname" required>
+    <br><br>
+	
+    Mobile number:<input type="text" name="mnumber" value="" placeholder=" enter your mobile number" required>
+    <br><br>
+	
+    Region/Locality:<input type="search" name="locality" value="" placeholder="enter your region/locality" required>
+    <br><br>
+		
+    <input type="submit" value="Submit" >
+  </fieldset>
+</form>
+
+</body>
+</html>

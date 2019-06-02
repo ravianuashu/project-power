@@ -1,0 +1,146 @@
+.button{
+	position: absolute;
+	top: 80%;
+	left:42%;
+    transform: translate(-50%,-50%);
+}
+.button1{
+	position: absolute;
+	top: 80%;
+	left:55.5%;
+    transform: translate(-50%,-50%);
+
+}
+.button2{
+	position: absolute;
+	top: 72%;
+	left: 41.1%;
+}
+
+.btn{
+	border: 2px solid #fff;
+	padding: 10px 50px;
+	color: #fff;
+	text-decoration: none; 
+	transition: 0.8s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+
+}
+
+body{
+        background-image: url(hs.jpg);
+	    background-size: cover;
+		background position: center;  
+
+    }
+
+.login-box {
+   	
+   	     max-width: 350px;
+   	     float: center;
+   	     margin: 160px auto;
+   	     border-style: double;
+	     border-radius: 1px;
+	     border-color: #ab1414;
+	     position: center;
+}
+
+.login-left{
+    background-color: #fff;
+    padding: 10px;
+    position: center;
+}   
+
+.login-right{
+    background-color: #fff;
+    padding: 10px;
+    position: center;
+}   
+
+.row{
+	background-color: #aba5b5;
+    padding: 5px;
+    position: center;
+}
+.form-group{
+	color:black;
+	float: center;
+	font-size: 19px;
+	font-style: bold;
+	
+}
+
+.but{
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	transform: translate(-50%,-50%);
+	display: bottom;
+	list-style-type: none; 
+}
+
+.frame{
+	position: absolute;
+	top: 155%;
+	left: 500%;
+	transform: translate(-50%,-50%);
+}
+
+.submit{
+	position: absolute;
+	top: 8%;
+	left: 60%;
+}
+.form-control{
+	border-style: solid;
+	border-radius: 1px;
+	border-color: #000;
+
+}
+
+h2{
+	margin-left: 82px;
+	margin-right: 25px;
+}
+p{
+	margin-left: 84px;
+	margin-right: 20px;
+}
+label{
+	margin-top: 15px;
+	margin-left: 30px;
+	margin-right: 20px;
+}
+button.btn.btn-primary{
+	margin-top: 10px;
+	margin-left: 77px;
+	margin-right: 20px;
+	color: #000;
+
+}
+.upload{
+   
+    margin-top: 0px;
+   
+}
+ h4{
+    color: white;
+ }
+input#fileToUpload{
+	color: white;
+
+}
+.simg1{
+	color: #fff;
+	position: center;
+	margin-top: 200px;
+
+}
+
+.button1{
+	margin-top: 0px;
+}

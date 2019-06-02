@@ -1,0 +1,4 @@
+<?php
+
+echo"THANKS FOR USING ELECTRICITY";
+

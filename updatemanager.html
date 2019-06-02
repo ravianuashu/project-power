@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+     var random=Math.floor(Math.random() * 10) + 1;
+                    var r1 = Math.random( );
+                    var r2 = Math.random( );
+                    var r3 = Math.random( );
+                    var r4 = Math.random( );
+                    var r5 = Math.random( );
+                    var r6 = Math.random( );
+                    var r7 = Math.random( );
+                    var r8 = Math.random( );
+                    var r9 = Math.random( );
+                    var r10 = Math.random( );
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "month"+random
+	},
+	axisY: {
+		title: "power consumption"
+	},
+	data: [{        
+		type: "column",  
+		showInLegend: true, 
+		legendMarkerColor: "grey",
+		legendText: "locality",
+		dataPoints: [      
+			{ y: r1*10000, label: "ghughli" },
+            { y: r2*10000, label: "pauhariya" },
+            { y: r3*10000, label: "shymali" },
+            { y: r4*10000, label: "jogiya" },
+            { y: r5*10000, label: "pilakhua" },
+            { y: r6*10000, label: "hapur" },
+            { y: r7*10000, label: "rampur" },
+            { y: r8*10000, label: "shivpuri" },
+            { y: r9*10000, label: "mirzapur" },
+            { y: r10*10000, label: "matiyala" },
+
+			
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="width: 50%; height: 30;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
